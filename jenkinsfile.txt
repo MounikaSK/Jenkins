@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // Change directory and compile the Java file
                     bat '''
-                        javac -d target Sample1.java
+                        javac -d target Fibo.java
                     '''
                 }
             }
@@ -25,7 +25,7 @@ pipeline {
                 script {
                     // Run the compiled Java program
                     bat '''
-                        java -cp target Sample1
+                        java -cp target Fibo
                     '''
                 }
             }
